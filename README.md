@@ -7,8 +7,10 @@ We aim to build a website for our community. The idea is to foster collaborative
 
 The initial idea of this project begunand ended on a sad note. (WebProject Version I) However, honourable mentions go out to :
 
+<ul>
 <li><a href="https://github.com/JahlomP"> Precious Jahlom Agboado</a></li>
 <li><a href="https://github.com/nadjetey">Nii Adjetey Sowa</a></li>
+</ul>
 
 For their consitency and dedication to the Initial <a href="https://github.com/GDGGhana/WebProjectBlue">project</a>.
 
