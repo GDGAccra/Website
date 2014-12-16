@@ -1,4 +1,4 @@
-###COMMUNITY PROJECT (WebProject -Version 2)
+###COMMUNITY PROJECT (WebProject -Version 2) http://gdgghana.rappts.org/
 <hr>
 
 GDG Ghana's community collaboration.
