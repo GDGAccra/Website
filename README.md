@@ -1,4 +1,4 @@
-###COMMUNITY PROJECT (WebProject -Version 2)
+###COMMUNITY PROJECT (WebProject -Version 2) http://gdgghana.rappts.org/
 <hr>
 
 GDG Ghana's community collaboration.
@@ -22,5 +22,5 @@ Please push a commit with your name if you choose to take part in this project.
 
 ###Project Direction
 <hr>
-This is a Polymer Orieted project.
-Though wireframes have been provided,feel free to go crazy doing your thing. However stick to the basic idea provided. There was the initial thought that , we allow new user registration on the site, but there are no known/available API's to link our existing databse of users i.e in the forum and any new one we form.[the API's in question are only available to paying communities on Google Apps for organisations.] However if you have any idea as to how you can implement a user registration, Kindly do so.
+This is a Polymer Oriented project.
+Though wireframes have been provided, feel free to go crazy doing your thing. However stick to the basic idea provided. There was the initial thought that we allow new user registration on the site, but there are no known/available API's to link our existing databse of users i.e in the forum and any new one we form.[the API's in question are only available to paying communities on Google Apps for organisations.] However if you have any idea as to how you can implement a user registration, Kindly do so.

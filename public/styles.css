@@ -1,0 +1,24 @@
+
+body {
+  font-family: RobotoDraft, sans-serif;
+  color: #333;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+}
+
+core-toolbar {
+  background-color: #455ede;
+  color: #fff;
+}
+
+paper-tab {
+  cursor: pointer;
+}
+paper-tabs[noink][nobar] paper-tab.core-selected {
+  color: #ffff8d;
+}
