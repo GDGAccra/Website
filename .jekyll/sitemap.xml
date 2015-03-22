@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/blog/call-for-papers</loc>
+    <lastmod>2014-07-21T09:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>/blog/hello-world</loc>
+    <lastmod>2014-07-21T08:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>/blog/</loc>
+  </url>
+  <url>
+    <loc>/cod/</loc>
+  </url>
+  <url>
+    <loc>/hackathon/</loc>
+  </url>
+  <url>
+    <loc>/</loc>
+  </url>
+  <url>
+    <loc>/logistics/</loc>
+  </url>
+  <url>
+    <loc>/schedule/</loc>
+  </url>
+  <url>
+    <loc>/speakers/</loc>
+  </url>
+  <url>
+    <loc>/team/</loc>
+  </url>
+</urlset>
