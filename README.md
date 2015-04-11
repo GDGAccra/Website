@@ -1,59 +1,81 @@
+Grunt version of Project Zeppelin / GDG DevFest 2014 site template
+=============
 
-## Local development
+### About 
+Project Zeppelin allows you to setup awesome GDG DevFest site in 5 minutes. 
 
-Check if you have [all requirements for local environment](http://jekyllrb.com/docs/installation/).
-To install all development dependencies install [Bundler](http://bundler.io/).
-```bash
-    gem install bundler
-``` 
-and run next command from root folder:
+Grunt version of this project allows you to get easier more optimized site. Several commands will simplify development process. Furthermore, now project supports i18n.
 
-```bash
-  bundle install
-```  
+You can find original project [here](https://github.com/gdg-x/zeppelin).
 
-To start Jekyll run:
-```bash
-    jekyll serve -w
+Template is brought by [GDG Lviv](http://lviv.gdg.org.ua/) team.
+
+### Live demo [http://gdg-x.github.io/zeppelin-grunt/](http://gdg-x.github.io/zeppelin-grunt/)
+
+### Features
+* Easy to setup
+* Simple and responsive design
+* Integrated speakers and sessions management
+* i18n
+* SVG icons
+* SEO friendly
+* Optimized
+
+### Quick-start guide
+1.  [Fork](https://github.com/gdg-x/zeppelin-grunt/fork) this repo
+2.  Clone locally
+3.  Install [Node.js](www.nodejs.org) and [Ruby](https://www.ruby-lang.org/)
+4.  Run `gem install bundler`
+5.  Install 'grunt-cli' and 'bower' globally with `npm install -g grunt-cli bower`
+6.  `$cd` to the directory and run `bundle install`
+7.  Run `npm install` to install the necessary "npm" dependencies
+8.  Then run `bower install` to install the front-end dependencies
+9.  Edit site variables
+
+
+In `Gruntfile.js` edit **baseurl** and **git_repo** (destination repository):
 ```
-Site will be available at http://127.0.0.1:4000/zeppelin/ or http://localhost:4000/zeppelin/ (on Windows)
-
-**NOTE:** in this mode all changes to html and data files will be automatically regenerated, but after changing ```_config.yml``` you have to restart server.
-
-### Sass(Compass) support
-**Note:** You need to install [Node.js](http://nodejs.org/download/)
-
-To watch changes of `.sass` files and compile it to the `.css` on a fly change property `safe: true` to `safe: false` in `_config.yml`.
-**Note: It works only on local machine, because GitHub runs Jekyll in `--save` [mode](https://help.github.com/articles/using-jekyll-with-pages/#configuration-overrides)**
-
-Learn more about Sass development from [documentation](https://github.com/gdg-x/zeppelin/wiki/Sass-development).
-
-
-### Resource optimizations (optional)
-
-You can optimize images and minify css and javascript automatically (for now only on Windows).
-But for Mac OS users available amazing tool - [imageoptim](https://imageoptim.com/). Thanks [@raphaelsavina](https://github.com/raphaelsavina) for link.
-Optimize all images by running this script from `/automation/images/` folder:
-```bash
-    all_image_optimization.bat -d -jtran -pout -pquant -optip -gsicle -svgo
+grunt.initConfig({
+        app: {
+            source: 'app',
+            dist: 'dist',
+            baseurl: 'zeppelin-grunt',  // Here
+            git_repo: 'git@github.com:gdg-x/zeppelin-grunt.git'  // And here
+        },
+    ...
 ```
 
-To minify CSS and JS run `minify_js.bat` (for Windows) and `minify_js.sh` (for Linux and MacOS) from `/automation/minifying/` folder:
-```bash
-    minify_js.bat
+In `_config.yml` you should also update **baseurl** and **url**:
+```
+# Site settings
+baseurl: "/zeppelin-grunt"  // Here
+url: "http://gdg-x.github.io"  // And here
+permalink: '/blog/:title'
+...
 ```
 
-Learn more about available optimization options from [documentation](https://github.com/gdg-x/zeppelin/wiki/Resources-optimizations).
+**Now you are ready for development**. Following commands are available:
 
-### Documentation
-Quick-start guide is not enough? Checkout [full documentation](https://github.com/gdg-x/zeppelin/wiki).
+1.  `grunt` (by default it runs `grunt serve`) - build and start your site for **development** (with livereload, js uglifing and sass compilation) 
+2.  `grunt serve:dist` - build and start your site with **production** configs (this is how it will look online)
+3.  `grunt deploy` - build and deploy your site into a repository you defined in previous steps
+
+#### More documentation you can find [here](https://github.com/gdg-x/zeppelin-grunt/wiki).
+
+### Who is using template?
+View [known sites](https://github.com/gdg-x/zeppelin#who-is-using-template) that use the original project.
 
 ### Used libraries
-* [Bootstrap](https://github.com/twbs/bootstrap)
-* [Animate.css](https://github.com/daneden/animate.css)
+* [Bootstrap Sass](https://github.com/twbs/bootstrap-sass)
+* [Animate.css Sass](https://github.com/tgdev/animate-sass)
 * [Waves](https://github.com/publicis-indonesia/Waves)
 * [jquery.appear](https://github.com/bas2k/jquery.appear)
 * [jQuery countTo Plugin](https://github.com/mhuggins/jquery-countTo)
 * [Typed.js](https://github.com/mattboldt/typed.js)
 * [Sticky-kit](https://github.com/leafo/sticky-kit)
 
+### Contributors
+Created by [Oleh Zasadnyy](https://github.com/ozasadnyy), [GDG Lviv](https://plus.google.com/102444623953913144164).
+
+### License
+Project is published under the [MIT license](https://github.com/ozasadnyy/zeppelin-grunt/blob/master/LICENSE). Feel free to clone and modify repo as you want, but don't forget to add reference to authors :)
