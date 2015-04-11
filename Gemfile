@@ -1,5 +1,6 @@
 source "http://rubygems.org"
 
-gem 'jekyll'
-gem "jekyll-sitemap"
-gem 'jekyll-multiple-languages-plugin'
+gem 'github-pages'
+gem 'compass'
+gem 'sass-media_query_combiner'
+gem 'autoprefixer-rails'
