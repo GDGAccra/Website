@@ -4,19 +4,20 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>GDGGhana Homepage</title>
-
   <!-- CSS  -->
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+  <style media="screen">
+  .icon-block {
+    padding: 0 15px;
+  }
+  </style>
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><img src="images/logo.svg"  alt="" />
       <ul class="right">
         <li><a href="https://gdgghana.com" class="brand-logo">Ghana</a></li>
       </ul>
-
-
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
@@ -26,47 +27,37 @@
       <div class="row center">
         <h5 class="header col s12 light">Google Developer Groups (GDGs) are for developers who are interested in Google's developer technology; everything from the Android, Chrome, Drive, and Google Cloud platforms, to product APIs like the Cast API, Maps API, and YouTube API and GDG Ghana is no different.</h5>
       </div>
-
       <br><br>
-
     </div>
   </div>
-
-
   <div class="container">
     <div class="section">
-
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><img src="images/gdglogo.png" height="75px" width="85px"/></h2>
             <h5 class="center">GDG Accra</h5>
-
             <p class="light">Based in Accra, this developer group consists of both students and workers that reside within the accra metropolis.Events are usually organised at least once every 30 days.</p>
           </div>
           <div class="row center">
             <a href="https://www.meetup.com/GDG-Accra/" id="download-button" target="_blank" class="btn-large waves-effect waves-light orange">Visit Site</a>
           </div>
         </div>
-
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><img src="images/GDG.png" height="75px" width="85px"/></h2>
             <h5 class="center">GDG UCC</h5>
-
             <p class="light">This Developer group is a community of budding tech enthusiasts based in the University of Cape Coast, Ghana. We meet to discuss, share and learn in a fun, creative and innovative way.</p><br>
           </div>
           <div class="row center">
             <a href="https://www.meetup.com/GDG-University-Of-Cape-Coast/" id="download-button" target="_blank" class="btn-large waves-effect waves-light orange">Visit Site</a>
           </div>
         </div>
-
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><img src="images/GDG.png" height="75px" width="85px"/></h2>
             <h5 class="center">GDG KNUST</h5>
-
             <p class="light">Developers in the Kumasi Metrolpolis interested in Google Technology fall under this umbrella. This group although the name states KNUST, coordinates and manages the events within the whole metropolis.</p>
           </div>
           <div class="row center">
@@ -79,14 +70,12 @@
           <div class="icon-block">
             <h2 class="center light-blue-text"><img src="images/GDG.png" height="75px" width="85px"/></h2>
             <h5 class="center">GDG Legon</h5>
-
             <p class="light">GDG Legon is a group for those who are interested in learning about and developing solutions and apps using Google technologies..</a></p>
           </div>
           <div class="row center">
             <a href="https://www.meetup.com/GDG-Legon/" id="download-button" target="_blank" class="btn-large waves-effect waves-light orange">Visit Site</a>
           </div>
         </div>
-
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><img src="images/GDG.png" height="75px" width="85px"/></h2>
@@ -98,27 +87,18 @@
             <a href="https://www.meetup.com/GDG-ashesi/" id="download-button" target="_blank" class="btn-large waves-effect waves-light orange">Visit Site</a>
           </div>
         </div>
-
-
-
       </div>
-
     </div>
     <br><br>
-
     <div class="section">
-
     </div>
   </div>
-
   <footer class="page-footer orange">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">GDG</h5>
           <p class="grey-text text-lighten-4">Google Developer Groups (GDGs) are for developers who are interested in Google's developer technology; everything from the Android, Chrome, Drive, and Google Cloud platforms, to product APIs like the Cast API, Maps API, and YouTube API and GDG Ghana is no different.</p>
-
-
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Programs</h5>
@@ -128,7 +108,6 @@
             <li><a class="white-text" target ="_blank" href="https://developers.google.com/startups/">Startup Launchpad</a></li>
           </ul>
         </div>
-
         <div class="col l3 s12">
           <h5 class="white-text">Dev Consoles</h5>
           <ul>
@@ -137,7 +116,6 @@
             <li><a class="white-text" target ="_blank" href="https://developers.google.com/startups/">Google API Console</a></li>
           </ul>
         </div>
-
       </div>
     </div>
     <div class="footer-copyright">
@@ -146,12 +124,16 @@
       </div>
     </div>
   </footer>
-
-
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.min.js"></script>
-  <script src="js/init.js"></script>
+  <script  src="js/jquery-2.1.1.min.js"></script>
+  <script async src="js/materialize.min.js"></script>
+  <script async >
+  (function($){
+    $(function(){
+      $('.button-collapse').sideNav();
+    });
+  })(jQuery);
+  </script>
 
   </body>
 </html>
