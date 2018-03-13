@@ -1,1 +1,17 @@
-{}
+{
+
+  "hosting": {
+    "public": "public",
+    "cleanUrls": true,
+    "ignore": [
+      "/test/**",
+      "bower.json",
+      "database.rules.json",
+      "firebase.json",
+      "README.md",
+      "LICENSE.md",
+      ".gitignore"
+
+    ]
+  }
+}
